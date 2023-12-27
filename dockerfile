@@ -1,10 +1,10 @@
 # Dockerize Node JS
 
 # Use an official Node.js 14 LTS image based on Ubuntu 20.04
-FROM node:14
+FROM node:latest
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
